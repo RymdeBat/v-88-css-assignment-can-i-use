@@ -1,0 +1,161 @@
+// Variables:
+@decoration-text: none;
+@inline-block-display: inline-block;
+@align-center: center;
+@color-white:white;
+// Mix-ins:
+.content_positioning {
+    position: relative;
+}
+.positioning_content {
+    position: relative;
+    top: 5px;
+}
+.coordinates {
+    right: 61px;
+    top: 5px;
+}
+.maroon {
+    background-color: #810000;
+}
+.yellowish {
+    background-color: #94700C;
+}
+.green {
+    background-color: #258533;
+}
+.white {
+    color: @color-white;
+}
+body {
+    margin: 20px auto;
+    width: 1335px;
+    font-family: "Segoe UI", "Helvetica Neue", Arial, "Noto Sans","Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    background-image: url('img/caniuse-bg.png');
+    .asterisk {
+        .content_positioning();
+        top: 270px;
+        right: 24px;
+        font-size: x-large;
+        font-weight: bolder;
+        .white();
+        padding: 5px;
+        background-color: #C84F00;
+    }
+}
+    .container {
+        a {
+            text-decoration: @decoration-text;
+            .white();
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.168);
+            font-size: large
+        }
+        .position {
+            .content_positioning();
+            left: 875px;
+        }
+        .box_header {
+            background-color: #C84F00;
+            margin: 40px 0 30px 0;
+            .white();
+            p {
+                    display: @inline-block-display;
+                    .content_positioning();
+                    left: 400px;
+                    font-size: xx-large;
+                    font-weight: lighter;
+            }
+            .resize {
+                width: 400px;
+                text-align: @align-center;
+                border-bottom: 1px solid @color-white;
+            }
+        }
+        main {
+            h1 {
+                font-weight: lighter;
+            }
+            background-color: #F2E9D6;
+            padding: 10px 30px 20px 20px;
+            p {
+                display: @inline-block-display;
+                width: 450px;
+                font-size: large;
+            }
+            section {
+                padding: 10px 20px 20px 50px;
+                ul {
+                    margin: 5px 0;
+                }
+                li {
+                    display: @inline-block-display;
+                    text-align: @align-center;
+                    padding: 40px 0 0 0;
+                    vertical-align: middle;
+                    box-sizing: border-box;
+                    width: 90px;
+                    height: 80px;
+                }
+            }
+        }
+    }
+                .table_head li {
+                    border-bottom: 3px solid;
+                }
+                .blank_space {
+                    background-color: #EBE2CF;
+                }
+                #chrome-padding, #android_padding, #opera_padding, #safari_padding {
+                    padding: 30px 0;
+                }
+                #box_contents {
+                    li {
+                        height: 40px;
+                        span {
+                            .content_positioning();
+                            bottom: 25px;
+                        }
+                    }
+                }
+                .little-box {
+                    font-size: x-small;
+                    background-color: #FFFFFD;
+                }
+                .box-position-edge-firstrow {
+                    .content_positioning();
+                    right: 58px;
+                    top: 43px;
+                }
+                .box-position-edge {
+                    .positioning_content();
+                    right: 60px;
+                }
+                .box-position-ie {
+                    .positioning_content();
+                    right: 53px;
+                }
+                .box-position-firefox {
+                    .positioning_content();
+                    right: 56px;
+                }
+                .box-position-firefox-fifthrow {
+                    .positioning_content();
+                    right: 50px;
+                }
+                .box-position-chrome-fifthrow {
+                    .positioning_content();
+                    right: 49px;
+                }
+                .box-position-android-fourthrow {
+                    .positioning_content();
+                    right: 70px;
+                }
+                .box-position-operamobile-fourthrow {
+                    .positioning_content();
+                    right: 68px;
+                }
+                .box-position-chromeandroid-fourthrow {
+                    .positioning_content();
+                    right: 40px;
+                }
