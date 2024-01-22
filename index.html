@@ -6,6 +6,18 @@
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet/less" type="text/css" href="styles.less" />
         <script src="https://cdn.jsdelivr.net/npm/less"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+            $(document).ready( function() {
+                console.log('Document is ready');
+                console.log($('h1').click( function() {
+                    $('a').hide();
+                }));
+                console.log($('h1').click( function() {
+                    $('a').show();
+                }));
+            });
+        </script>
     </head>
     <body>
         <span class="asterisk">#</span>
